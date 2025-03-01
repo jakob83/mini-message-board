@@ -1,0 +1,10 @@
+<div class="msg">
+    <!-- we use <%= %> to output values in ejs -->
+    <!--output, variables passed to the options object of <%- %> include("path", {}) -->
+    <p><%= msg.text %></p>
+    <i><%= msg.user %></i>
+
+    <!-- we use <% %> for logic (variables, loops, conditionals) -->
+    <% const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; %>
+    <p class="added"><%= `${msg.added.getDate()} ${monthNames[msg.added.getMonth()]} ${msg.added.getFullYear()}` %></p>
+</div>

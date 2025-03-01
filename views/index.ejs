@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!--output, the title passed in the options object of res.render -->
+    <h1><%= title %></h1>
+    <a class="add-msg-btn" href="/new" >write message</a>
+      <div class="messages-cont">
+        <% messages.forEach(msg => { %>
+          <%- include('message/message', {msg: msg}) %>
+          <%})%>
+      </div>
+
+  </body>
+</html>
