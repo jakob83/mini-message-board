@@ -1,6 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('node:path');
 const indexRouter = require('./routes/index');
+
 const app = express();
 
 // setup, so that node/express knows, where the views folder is
