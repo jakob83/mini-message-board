@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/', indexRouter);
 
-const PORT = 8080 || process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
   console.log('live on' + PORT);
